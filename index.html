@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posadas Steel Home</title>
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- TU CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="container-fluid px-4">
+
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+
+            <!-- LOGO -->
+            <a class="navbar-brand d-flex align-items-center logo" href="#">
+                <img src="/img/navbar/logo_1PSH-removebg-preview.png" class="img">
+                <span class="ms-2" id="#Inicio">Posadas Steel Home</span>
+            </a>
+
+            <!-- BOTON HAMBURGUESA -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- MENU -->
+            <div class="collapse navbar-collapse justify-content-center" id="menuNav">
+                <ul class="navbar-nav gap-4 text-center">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Inicio</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Nosotros</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="catalogo.html">Catálogo</a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <!-- BOTON -->
+            <a class="btn-whatsapp ms-auto d-none d-lg-block"
+                href="https://wa.me/525519812564?text=Hola%20quiero%20pedir%20productos%20de%20Posadas%20Steel%20Home"
+                target="_blank"><img class="img-wats" src="./img/whatsapp/icons8-whatsapp-48.apng.png" alt="">
+            </a>
+
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Proveedor de productos de acero inoxidable</h1>
+            <p>Venta de mayoreo para negocios en todo México</p>
+            <button>Ver Catálogo</button>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="contacto reveal">
+        <h2>Contacto</h2>
+
+        <div class="container">
+            <div class="row g-4 justify-content-center">
+
+            </div>
+        </div>
+    </section>
+
+    <!-- MAYOREO -->
+    <section class="mayoreo">
+        <h2>¿Tienes un negocio?</h2>
+        <p>Compra directo con proveedor y obtén mejores precios.</p>
+
+        <button>
+            <a href="https://wa.me/525519812564?text=Hola%20quiero%20pedir%20salseras" class="btn-cotizacion"
+                target="_blank">
+                Solicitar Cotización
+            </a>
+        </button>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-info">
+            <p>Posadas Steel Home</p>
+            <p>CDMX, México</p>
+            <p>PosadasSteelHome@gmail.com</p>
+        </div>
+    </footer>
+
+    <!-- JS BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+
+        const reveals = document.querySelectorAll(".reveal");
+
+        window.addEventListener("scroll", () => {
+
+            reveals.forEach(element => {
+
+                const windowHeight = window.innerHeight;
+
+                const elementTop =
+                    element.getBoundingClientRect().top;
+
+                if (elementTop < windowHeight - 100) {
+
+                    element.classList.add("active");
+
+                }
+
+            });
+
+        });
+
+    </script> 
+</body>
+
+</html>
