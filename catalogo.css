@@ -49,14 +49,14 @@ body {
 }
 
 .nav-link:hover {
-    color: #00ff55;
+    color: #0084ff;
 }
 
 .nav-link::after {
     content: "";
     width: 0%;
     height: 2px;
-    background: #00ff88;
+    background: #3455f8;
     position: absolute;
     left: 0;
     bottom: 0;
@@ -68,7 +68,7 @@ body {
 }
 
 .menu a:hover {
-    color: #00ff88;
+    color: #0084ff;
     background: none;
 }
 
