@@ -2264,10 +2264,14 @@ Pedido:
 
             carrito.forEach(producto => {
 
-                total += producto.precio * producto.cantidad;
+                const subtotal =
+                    producto.precio * producto.cantidad;
+
+                total += subtotal;
 
                 mensaje +=
-                    `• ${producto.nombre} x${producto.cantidad}\n`;
+                    `• ${producto.nombre} 
+                    ${producto.cantidad} piezas = $${subtotal}\n`;
 
             });
 
