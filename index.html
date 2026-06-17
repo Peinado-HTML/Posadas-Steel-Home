@@ -27,20 +27,23 @@
             <!-- LOGO -->
             <a class="navbar-brand d-flex align-items-center logo" href="index.html">
                 <img src="./img/navbar/logo_1PSH-removebg-preview.png" class="img">
-                <span class="marca ms-2" id="#inicio">Posadas Steel Home</span>
+                <span class="nom-pag ms-2" id="#inicio">Posadas Steel Home</span>
             </a>
 
             <!-- BOTON HAMBURGUESA -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#menuLateral">
+
                 <span class="navbar-toggler-icon"></span>
+
             </button>
 
             <!-- MENU -->
-            <div class="collapse navbar-collapse justify-content-center" id="menuNav">
+            <div class="collapse navbar-collapse justify-content-center d-none d-lg-flex" id="menuNav">
                 <ul class="navbar-nav gap-4 text-center">
 
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html" id="inicio">Inicio</a>
+                        <a class="nav-link" href="#inicio">Inicio</a>
                     </li>
 
                     <li class="nav-item dropdown">
@@ -48,7 +51,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Nosotros</a>
+                        <a class="nav-link" href="#nosotros">Nosotros</a>
                     </li>
 
                     <li class="nav-item">
@@ -65,10 +68,58 @@
             </a>
 
         </nav>
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="menuLateral">
+
+            <div class="offcanvas-header">
+
+                <h5 class="offcanvas-title">
+                    Posadas Steel Home
+                </h5>
+
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas">
+                </button>
+
+            </div>
+
+            <div class="offcanvas-body">
+
+                <ul class="navbar-nav text-center">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio" data-bs-dismiss="offcanvas">
+                            Inicio
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto" data-bs-dismiss="offcanvas">
+                            Contacto
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#nosotros" data-bs-dismiss="offcanvas">
+                            Nosotros
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="catalogo.html" data-bs-dismiss="offcanvas">
+                            Catálogo
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>  
+
     </header>
 
     <!-- HERO -->
-    <section class="hero">
+    <section class="hero" id="inicio">
         <div class="hero-text">
             <h1>Proveedor de productos de acero inoxidable</h1>
             <p>Venta de mayoreo para negocios en todo México</p>
@@ -77,7 +128,7 @@
         <div class="hero-cont"></div>
     </section>
 
-    <section class="nosotros">
+    <section class="nosotros" id="nosotros">
 
         <div class="nosotros-contenedor">
 
@@ -88,7 +139,7 @@
                 <p>
                     En <span>Posadas Steel Home</span> nos especializamos en la distribución
                     de productos de acero inoxidable para <span>negocios, restaurantes,
-                    cocinas industriales y comercios</span> en todo México.
+                        cocinas industriales y comercios</span> en todo México.
                 </p>
 
                 <p>
@@ -105,7 +156,7 @@
 
             <div class="nosotros-img">
 
-                <img src="./img/logo nosotros/logoconfondo.png" alt="Acero inoxidable">
+                <img src="./img/logo nosotros/logoconfondo.jpg" alt="Acero inoxidable">
 
             </div>
 

@@ -32,6 +32,30 @@ body {
     border-bottom: 1px solid #333;
 }
 
+.nom-pag {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: logoEntrada 1s ease forwards;
+    animation-delay: .3s;
+}
+
+@keyframes logoEntrada {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 .navbar-nav {
     opacity: 0;
     transform: translateY(-30px);
@@ -47,11 +71,10 @@ body {
 }
 
 .nav-link {
-    color: rgb(255, 255, 255);
+    color: white;
     position: relative;
     transition: 0.3s;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: bold;
 }
 
 /* EFECTO LINEA ABAJO */
@@ -83,7 +106,7 @@ body {
 }
 
 .menu a:hover {
-    color: #00ff88;
+    color: #0084ff;
     background: none;
 }
 
@@ -91,33 +114,10 @@ body {
     display: none;
 }
 
-.logo {
-    display: flex;
-    align-items: center;
-
-    opacity: 0;
-    transform: translateX(-50px);
-    animation: logoEntrada 1s ease forwards;
-    animation-delay: .3s;
-}
-
-@keyframes logoEntrada {
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
 .img {
     height: 100px;
     width: 100px;
 }
-
-.marca {
-    font-family: 'Playfair Display', serif;
-    font-weight: 100;
-}
-
 
 .btn-whatsapp {
     background: #00c853;
@@ -146,7 +146,7 @@ body {
     background:
         linear-gradient(rgba(0, 0, 0, 0.5),
             rgba(0, 0, 0, 0.5)),
-        url('./img/Hero/photo-1771226281112-b7119ef4112e.avif');
+        url('./img/Hero/photo-1771226281112-b7119ef4112e.jpg');
 
     background-size: cover;
     background-position: center;
@@ -391,4 +391,65 @@ footer {
 .reveal.active {
     opacity: 1;
     transform: translateY(0);
+}
+
+/* OFFCANVAS MOVIL */
+
+.offcanvas {
+    width: 280px;
+    background: #000000a3;
+}
+
+.offcanvas-header {
+    border-bottom: 1px solid #333;
+}
+
+.offcanvas-title {
+    color: white;
+    font-weight: bold;
+}
+
+.offcanvas .nav-link {
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 8px;
+    transition: .3s;
+}
+
+.offcanvas .nav-link:hover {
+    background: #1a1a1a;
+    color: #00ff88;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 991px) {
+
+    .navbar-collapse {
+        position: absolute;
+        top: 100px;
+        left: 0;
+
+        width: 100%;
+
+        background: #111;
+        padding: 20px 0;
+
+        border-top: 1px solid #333;
+
+        z-index: 999;
+    }
+
+    .navbar-nav {
+        gap: 0 !important;
+    }
+
+    .navbar-nav .nav-item {
+        padding: 10px 0;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 18px;
+    }
 }
