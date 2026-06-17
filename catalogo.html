@@ -2275,8 +2275,7 @@ Pedido:
 
             });
 
-            mensaje +=
-                `\nTOTAL: $${total} MXN`;
+            mensaje += `\nTOTAL: $${total} MXN`;
 
             const url =
                 `https://api.whatsapp.com/send?phone=${telefono}&text=${encodeURIComponent(mensaje)}`;
@@ -2290,7 +2289,18 @@ Pedido:
 
         btnVaciar.addEventListener("click", () => {
 
+            const confirmar = confirm(
+                "¿Seguro que deseas vaciar el carrito?"
+            );
+
+            if (!confirmar) return;
+
             carrito = [];
+
+            document.querySelectorAll(".cantidad-input")
+                .forEach(input => {
+                    input.value = 0;
+                });
 
             renderizarCarrito();
 
