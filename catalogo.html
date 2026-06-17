@@ -2252,18 +2252,13 @@ Cliente: ${nombreCliente}
 
             carrito.forEach(producto => {
 
-                const subtotal = producto.precio * producto.cantidad;
-
-                total += subtotal;
-
-                mensaje += `
-Producto: ${producto.nombre}
-Cantidad: ${producto.cantidad}
-Subtotal: $${subtotal} MXN
-
-`;
+                mensaje +=
+                    `• ${producto.nombre} x${producto.cantidad}\n`;
 
             });
+
+            mensaje += `\nTotal: $${total}`;
+
 
             mensaje += `
 TOTAL: $${total} MXN
