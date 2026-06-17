@@ -383,6 +383,19 @@ body {
     font-weight: bold;
 }
 
+/* CAMPO DE NOMBRE */
+
+#nombre-cliente {
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #333;
+    background: #111;
+    color: rgb(255, 255, 255);
+}
+
 /* ANIMACIONES */
 
 .animacion-agregado {

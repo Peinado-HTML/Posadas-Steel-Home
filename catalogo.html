@@ -1946,6 +1946,9 @@
 
                 <h3>Total: $<span id="total-carrito">0</span> MXN</h3>
 
+                <input type="text" id="nombre-cliente" placeholder="Ingresa tu nombre" class="form-control mt-3">
+
+
                 <button id="btn-whatsapp">
                     Enviar pedido por WhatsApp
                 </button>
@@ -2234,40 +2237,46 @@
                 return;
             }
 
-            const nombreCliente = prompt("Ingresa tu nombre:");
+            const nombreCliente =
+                document.getElementById("nombre-cliente").value.trim();
+
+            if (!nombreCliente) {
+
+                alert("Por favor ingresa tu nombre");
+
+                return;
+            }
 
             if (!nombreCliente) return;
 
             const telefono = "525519812564";
 
-            let mensaje = `
-POSADAS STEEL HOME
-NUEVO PEDIDO
+            let mensaje =
+                `*POSADAS STEEL HOME*
+*NUEVO PEDIDO*
 
 Cliente: ${nombreCliente}
 
+Pedido:
 `;
 
             let total = 0;
 
             carrito.forEach(producto => {
 
+                total += producto.precio * producto.cantidad;
+
                 mensaje +=
                     `• ${producto.nombre} x${producto.cantidad}\n`;
 
             });
 
-            mensaje += `\nTotal: $${total}`;
-
-
-            mensaje += `
-TOTAL: $${total} MXN
-`;
+            mensaje +=
+                `\nTOTAL: $${total} MXN`;
 
             const url =
-                `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`;
+                `https://api.whatsapp.com/send?phone=${telefono}&text=${encodeURIComponent(mensaje)}`;
 
-            console.log(carrito);
             window.location.href = url;
 
         });
