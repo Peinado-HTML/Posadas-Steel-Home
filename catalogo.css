@@ -160,8 +160,9 @@ img {
     font-size: 40px;
 }
 
-.contenedor-cards {
+.contenedor-cucharones {
     gap: 30px;
+    border: 2px solid red;
 }
 
 .card {
