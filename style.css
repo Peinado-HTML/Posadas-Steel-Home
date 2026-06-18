@@ -25,6 +25,11 @@ body {
     }
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 /* NAVBAR PRO */
 .navbar {
     height: 100px;
@@ -439,4 +444,119 @@ footer {
     .navbar-nav .nav-link {
         font-size: 18px;
     }
+}
+
+/* ===================================
+RESPONSIVE MOVIL
+=================================== */
+
+@media (max-width: 768px) {
+
+    /* NAVBAR */
+
+    .navbar {
+        height: 80px;
+        padding: 0 10px;
+    }
+
+    .img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .nom-pag {
+        font-size: 1rem;
+    }
+
+    /* HERO */
+
+    .hero {
+        min-height: 100vh;
+        padding: 120px 20px 60px;
+        justify-content: center;
+        text-align: left;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    .hero p {
+        font-size: .95rem;
+    }
+
+    .hero button {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    /* NOSOTROS */
+
+    .nosotros {
+        padding: 60px 20px;
+    }
+
+    .nosotros-contenedor {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .nosotros-texto {
+        min-width: auto;
+        width: 100%;
+    }
+
+    .nosotros-texto h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .nosotros-img {
+        min-width: auto;
+        width: 100%;
+    }
+
+    .nosotros-img img {
+        width: 100%;
+    }
+
+    /* CONTACTO */
+
+    .contacto {
+        padding: 60px 20px;
+    }
+
+    .contacto h2 {
+        font-size: 2rem;
+    }
+
+    .contacto-card,
+    .contacto-card-correo {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    /* MAYOREO */
+
+    .mayoreo {
+        padding: 60px 20px;
+    }
+
+    .mayoreo h2 {
+        font-size: 2rem;
+    }
+
+    .mayoreo button {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    /* FOOTER */
+
+    footer {
+        padding: 20px;
+        font-size: .9rem;
+    }
+
 }
