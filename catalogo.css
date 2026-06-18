@@ -162,7 +162,7 @@ img {
 
 .contenedor-cucharones {
     gap: 30px;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 .card {
