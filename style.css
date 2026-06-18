@@ -101,19 +101,6 @@ body {
     padding-bottom: 5px;
 }
 
-.dropdown-menu {
-    border-radius: 10px;
-}
-
-.menu a:hover {
-    color: #0084ff;
-    background: none;
-}
-
-.dropdown-toggle::after {
-    display: none;
-}
-
 .img {
     height: 100px;
     width: 100px;
@@ -401,7 +388,8 @@ footer {
 }
 
 .offcanvas-header {
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid #707070;
+    background: #000;
 }
 
 .offcanvas-title {
@@ -418,8 +406,7 @@ footer {
 }
 
 .offcanvas .nav-link:hover {
-    background: #1a1a1a;
-    color: #00ff88;
+    color: #0084ff;
 }
 
 /* RESPONSIVE */

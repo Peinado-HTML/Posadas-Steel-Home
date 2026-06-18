@@ -60,7 +60,7 @@ body {
     background: #3455f8;
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: 0;      
     transition: .3s;
 }
 
@@ -481,15 +481,17 @@ footer {
 
 .offcanvas {
     width: 280px;
-    background: #111;
+    background: #1e1e1e93;
 }
 
 .offcanvas-header {
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid #707070;
+    background: #000;
 }
 
 .offcanvas-title {
     color: white;
+    background: #000;
     font-weight: bold;
 }
 
@@ -503,7 +505,7 @@ footer {
 
 .offcanvas .nav-link:hover {
     background: #1a1a1a;
-    color: #00ff88;
+    color: #0084ff;
 }
 
 /* RESPONSIVE */
