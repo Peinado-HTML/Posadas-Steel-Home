@@ -683,3 +683,12 @@ RESPONSIVE TABLETS Y CELULARES
     }
 
 }
+
+.btn-mas,
+.btn-menos,
+#contador-carrito,
+#btn-whatsapp,
+#vaciar-carrito {
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+}
