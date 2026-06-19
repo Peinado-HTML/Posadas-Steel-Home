@@ -309,7 +309,7 @@ img {
     margin-top: 20px;
     padding: 14px;
 
-    background: #4F8EF7;
+    background: #1ebe5d;
     color: white;
 
     border: none;
@@ -322,7 +322,8 @@ img {
 }
 
 #btn-whatsapp:hover {
-    background: #1ebe5d;
+    background: #1a9d4e;
+    box-shadow: 0 0 20px rgb(110, 141, 255);
 }
 
 #vaciar-carrito {
