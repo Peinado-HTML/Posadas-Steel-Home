@@ -273,8 +273,8 @@ h3 {
 
 .contacto-card {
     width: 250px;
-    background: #151515;
-    border: 1px solid #2b2b2b;
+    background: #5eb1ff;
+    border: 2px solid #ffffff;
     border-radius: 15px;
     padding: 30px;
     transition: .3s;
@@ -282,8 +282,8 @@ h3 {
 
 .contacto-card-correo {
     width: 300px;
-    background: #151515;
-    border: 1px solid #2b2b2b;
+    background: #0084ff;
+    border: 2px solid #ffffff;
     border-radius: 15px;
     padding: 30px;
     transition: .3s;
@@ -291,7 +291,8 @@ h3 {
 
 .contacto-card-correo:hover {
     transform: translateY(-8px);
-    border-color: #8a8a8a;
+    border-color: #ffffff;
+    box-shadow: 0 0 30px rgb(73, 131, 255);
 }
 
 .contacto-card-correo h3 {
@@ -299,12 +300,14 @@ h3 {
 }
 
 .contacto-card-correo p {
-    color: #bdbdbd;
+    color: #ffffff;
+    font-weight: bold;
 }
 
 .contacto-card:hover {
     transform: translateY(-8px);
-    border-color: #8a8a8a;
+    border-color: #ffffff;
+    box-shadow: 0 0 30px rgb(86, 196, 255);
 }
 
 .contacto-card h3 {
@@ -312,7 +315,8 @@ h3 {
 }
 
 .contacto-card p {
-    color: #bdbdbd;
+    color: #ffffff;
+    font-weight: bold;
 }
 
 /* PRODUCTOS */
